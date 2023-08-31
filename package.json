@@ -50,6 +50,9 @@
   "license": "MIT",
   "main": "./lib/timesync.js",
   "name": "timesync",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@mosayc-art"
+  },
   "react-native": "./dist/timesync.min.js",
   "repository": {
     "type": "git",
