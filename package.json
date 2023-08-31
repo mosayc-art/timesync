@@ -49,9 +49,9 @@
   ],
   "license": "MIT",
   "main": "./lib/timesync.js",
-  "name": "timesync",
+  "name": "@mosayc-art/timesync",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@mosayc-art"
+    "@mosayc-art:registry": "https://npm.pkg.github.com"
   },
   "react-native": "./dist/timesync.min.js",
   "repository": {
@@ -66,5 +66,14 @@
     "prepublishOnly": "npm run build",
     "watch": "watch \"npm run build\" src"
   },
-  "version": "1.0.11"
+  "version": "1.0.11",
+  "bugs": {
+    "url": "https://github.com/mosayc-art/timesync/issues"
+  },
+  "homepage": "https://github.com/mosayc-art/timesync#readme",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib"
+  }
 }
