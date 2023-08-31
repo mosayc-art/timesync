@@ -1,27 +1,18 @@
 {
-  "name": "timesync",
-  "version": "1.0.11",
-  "description": "Time synchronization between peers",
   "author": "Jos de Jong <wjosdejong@gmail.com> (https://github.com/josdejong)",
-  "main": "./lib/timesync.js",
-  "browser": "./dist/timesync.min.js",
-  "react-native": "./dist/timesync.min.js",
-  "license": "MIT",
-  "keywords": [
-    "time",
-    "synchronization",
-    "ntp",
-    "client",
-    "server",
-    "isomorphic"
+  "contributors": [
+    "Ivan <ivan@mosayc.com>"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/enmasseio/timesync.git"
+  "browser": "./dist/timesync.min.js",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   },
   "dependencies": {
     "debug": "^4.3.4"
   },
+  "description": "Time synchronization between peers",
   "devDependencies": {
     "@babel/cli": "7.18.10",
     "@babel/core": "7.18.13",
@@ -37,19 +28,6 @@
     "uglify-js": "3.17.0",
     "watch": "1.0.2"
   },
-  "scripts": {
-    "bundle": "mkdirp dist && browserify src/timesync.js -t babelify -s timesync -o dist/timesync.js --bare",
-    "minify": "uglifyjs dist/timesync.js -o dist/timesync.min.js",
-    "compile": "babel src --out-dir lib",
-    "build": "npm run bundle && npm run minify && npm run compile",
-    "watch": "watch \"npm run build\" src",
-    "prepublishOnly": "npm run build"
-  },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
-  },
   "files": [
     "dist",
     "docs",
@@ -60,5 +38,30 @@
     "HISTORY.md",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "keywords": [
+    "time",
+    "synchronization",
+    "ntp",
+    "client",
+    "server",
+    "isomorphic"
+  ],
+  "license": "MIT",
+  "main": "./lib/timesync.js",
+  "name": "timesync",
+  "react-native": "./dist/timesync.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mosayc-art/timesync.git"
+  },
+  "scripts": {
+    "build": "npm run bundle && npm run minify && npm run compile",
+    "bundle": "mkdirp dist && browserify src/timesync.js -t babelify -s timesync -o dist/timesync.js --bare",
+    "compile": "babel src --out-dir lib",
+    "minify": "uglifyjs dist/timesync.js -o dist/timesync.min.js",
+    "prepublishOnly": "npm run build",
+    "watch": "watch \"npm run build\" src"
+  },
+  "version": "1.0.11"
 }
