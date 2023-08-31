@@ -49,14 +49,14 @@
   ],
   "license": "MIT",
   "main": "./lib/timesync.js",
-  "name": "@mosayc-art/timesync",
+  "name": "timesync",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@mosayc-art"
   },
   "react-native": "./dist/timesync.min.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mosayc-art/timesync.git"
+    "url": "git+https://github.com/mosayc-art/timesync.git"
   },
   "scripts": {
     "build": "npm run bundle && npm run minify && npm run compile",
