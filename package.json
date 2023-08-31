@@ -51,12 +51,12 @@
   "main": "./lib/timesync.js",
   "name": "@mosayc-art/timesync",
   "publishConfig": {
-    "@mosayc-art:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "react-native": "./dist/timesync.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mosayc-art/timesync.git"
+    "url": "https://github.com/mosayc-art/timesync.git"
   },
   "scripts": {
     "build": "npm run bundle && npm run minify && npm run compile",
