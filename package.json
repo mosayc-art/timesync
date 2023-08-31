@@ -49,7 +49,7 @@
   ],
   "license": "MIT",
   "main": "./lib/timesync.js",
-  "name": "timesync",
+  "name": "@mosayc-art/timesync",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@mosayc-art"
   },
